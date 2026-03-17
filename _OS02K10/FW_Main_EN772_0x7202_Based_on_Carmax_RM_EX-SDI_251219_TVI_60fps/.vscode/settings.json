@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "sensor_imx462_ud.h": "c",
+        "sensor_imx462_up.h": "c"
+    }
+}
