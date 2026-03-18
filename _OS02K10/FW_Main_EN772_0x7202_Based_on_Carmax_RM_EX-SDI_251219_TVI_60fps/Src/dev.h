@@ -74,7 +74,7 @@
 	#define		Model_Rear				0		// 0 : IMX307, IMX662, IMX675
 												// 1 : IMX462
 
-	#define		model_ImgTune_Option	1		// 0 : Ref Setting Value
+	#define		model_ImgTune_Option	01		// 0 : Ref Setting Value
 												//*1 : Fine Tuning data each sensor (default)
 
 	#define 	model_Isp		ISP_EN772S	// ISP selection
