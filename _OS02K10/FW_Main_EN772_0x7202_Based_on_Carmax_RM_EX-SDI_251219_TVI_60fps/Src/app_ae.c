@@ -109,16 +109,16 @@ BYTE gbVsShtLine0, gbVsShtLine1 = 0;
 void InitAe(void)
 {
 	AE_LOCK_SELw(1);
-	AE_WIN_SELw(0x6);
+	// AE_WIN_SELw(0x6);
 
-	AE1_SLICEw(0x0);			// DEFOG
-	AE1_CLIPw(0x3ff);			// "
-	AE2_SLICEw(0x0);			// Main	/ Long
-	AE2_CLIPw(0x3ff);			// "
-	AE3_SLICEw(0x0);			// BLC  / WDR S1
-	AE3_CLIPw(0x3ff);			// "
+	// AE1_SLICEw(0x0);			// DEFOG
+	// AE1_CLIPw(0x3ff);			// "
+	// AE2_SLICEw(0x0);			// Main	/ Long
+	// AE2_CLIPw(0x3ff);			// "
+	// AE3_SLICEw(0x0);			// BLC  / WDR S1
+	// AE3_CLIPw(0x3ff);			// "
 
-	TMG_ONw(0x0);
+	// TMG_ONw(0x0);
 
 #if (model_5M)
 	//The  AE2 window value originally set according to default mode
