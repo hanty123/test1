@@ -71,7 +71,7 @@
 #ifndef __LIB__
 
 	// Image Quality Option -----------------------------------------------------------------------
-	#define		Model_Rear				1		// 0 : IMX307, IMX662, IMX675
+	#define		Model_Rear				0		// 0 : IMX307, IMX662, IMX675
 												// 1 : IMX462
 
 	#define		model_ImgTune_Option	1		// 0 : Ref Setting Value
