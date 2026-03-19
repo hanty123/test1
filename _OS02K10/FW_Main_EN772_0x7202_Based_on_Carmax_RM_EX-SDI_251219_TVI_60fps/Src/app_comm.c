@@ -7,7 +7,7 @@
 *************************************************************************** */
 
 #include "dev.h"
-
+   
 //-------------------------------------------------------------------------------------------------
 // Variables
 BYTE	gbETX = 0;
@@ -594,7 +594,7 @@ void ISPM RxMenuWrite(void)
 	}
 }
 
-#define Protocol_EXSDI 0
+#define Protocol_EXSDI 1
 
 int ISPM RxPD(const BYTE bCh, const BYTE bIn)
 {	
