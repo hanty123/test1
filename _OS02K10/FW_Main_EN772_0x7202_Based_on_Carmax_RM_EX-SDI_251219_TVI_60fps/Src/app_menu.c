@@ -88,7 +88,7 @@ BYTE	MN_MXSP = MN_MXSP_DEF;
 //MENU_STR_LIST(SHUT__LIST, 21,	SHUT_30, SHUT_60, SHUT_120, SHUT_250, SHUT_500, SHUT_1000, SHUT_2000, SHUT_4000, SHUT_8000, SHUT_15000,
 								//SHUT_30000, SHUT_25, SHUT_50, SHUT_100, SHUT_200, SHUT_400, SHUT_800, SHUT_1600, SHUT_3200, SHUT_6400,
 								//SHUT_12800);
-
+// fdfdfdfdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffjjj
 //*************************************************************************************************
 // Fixed define Functions
 //-------------------------------------------------------------------------------------------------
