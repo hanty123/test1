@@ -4,7 +4,7 @@
  Designer		:	Lee, Hoon
  Modifier		:	Lee, Gyu Hong
  Date		:	19. 12. 18
- Copyright ¨Ï Eyenix Co., Ltd. All Rights Reserved.
+ Copyright ï¿½ï¿½ Eyenix Co., Ltd. All Rights Reserved.
 *************************************************************************** */
 
 #include "dev.h"
@@ -30,44 +30,44 @@ void InitDataID(void)
 // Common ----------------------------------------------------------
 void ISPM AppSavePar(void)
 {	// save parameter to memory
-	static BYTE bTwiWrEep2Rdy = 1;	// TwiWrEep2() Ready
+	// static BYTE bTwiWrEep2Rdy = 1;	// TwiWrEep2() Ready
 
-	if (bTwiWrEep2Rdy) {
+	// if (bTwiWrEep2Rdy) {
 
-		if (gbMnParSaveChk) {			// Menu Parameter
+	// 	if (gbMnParSaveChk) {			// Menu Parameter
 
-			#if model_Save
-				SfWrite2(gbMnParTbl, MN_PAR_EA, FLASH_MENU_MODE);
-			#else
-				TwiWrEep2(TWI_EEP_MENU_STT, gbMnParTbl, MN_PAR_EA);
-			#endif
+	// 		#if model_Save
+	// 			SfWrite2(gbMnParTbl, MN_PAR_EA, FLASH_MENU_MODE);
+	// 		#else
+	// 			TwiWrEep2(TWI_EEP_MENU_STT, gbMnParTbl, MN_PAR_EA);
+	// 		#endif
 
-			gbMnParSaveChk = 0;
-			bTwiWrEep2Rdy = 0;
-		}
-	  #if (model_Par==1)
-		else if (gbUsrParSaveChk) {		// User Parameter
+	// 		gbMnParSaveChk = 0;
+	// 		bTwiWrEep2Rdy = 0;
+	// 	}
+	//   #if (model_Par==1)
+	// 	else if (gbUsrParSaveChk) {		// User Parameter
 
-			#if model_Save
-				SfWrite2(gbUsrParTbl, USR_PAR_EA, FLASH_USER_MODE);
-			#else
-				TwiWrEep2(TWI_EEP_USER_STT, gbUsrParTbl, USR_PAR_EA);
-			#endif
+	// 		#if model_Save
+	// 			SfWrite2(gbUsrParTbl, USR_PAR_EA, FLASH_USER_MODE);
+	// 		#else
+	// 			TwiWrEep2(TWI_EEP_USER_STT, gbUsrParTbl, USR_PAR_EA);
+	// 		#endif
 
-			gbUsrParSaveChk = 0;
-			bTwiWrEep2Rdy = 0;
-		}
-	  #endif
-		else if (gbUsrDataSaveChk) {	// User Data
+	// 		gbUsrParSaveChk = 0;
+	// 		bTwiWrEep2Rdy = 0;
+	// 	}
+	//   #endif
+	// 	else if (gbUsrDataSaveChk) {	// User Data
 
-			#if model_Save
-				SfWrite2(gbUsrDataTbl, USR_DATA_EA, FLASH_DATA_MODE);
-			#else
-				TwiWrEep2(TWI_EEP_DATA_STT, gbUsrDataTbl, USR_DATA_EA);
-			#endif
+	// 		#if model_Save
+	// 			SfWrite2(gbUsrDataTbl, USR_DATA_EA, FLASH_DATA_MODE);
+	// 		#else
+	// 			TwiWrEep2(TWI_EEP_DATA_STT, gbUsrDataTbl, USR_DATA_EA);
+	// 		#endif
 
-			gbUsrDataSaveChk = 0;
-			bTwiWrEep2Rdy = 0;
+	// 		gbUsrDataSaveChk = 0;
+	// 		bTwiWrEep2Rdy = 0;
 		}
 	  #if model_MenuDefSet == 1
 		else if (gbMnSetParSaveChk) {	// Menu Setting Parameter
