@@ -28,28 +28,28 @@
 //-------------------------------------------------------------------------------------------------
 void InitFlash(void)
 {
-	TxStrNoIRQ("Flash Init.", 0, 0);
+// 	TxStrNoIRQ("Flash Init.", 0, 0);
 
-//	sfls_init();
+// //	sfls_init();
 
-	//SINGLE
-	SFLS_CLKDIV = 1;		// Quad Read Mode�� ���� 2�� ���� ����. SFLS_CLKDIV = 2�� �ϸ� 3�� ���� ����.
-//	SFLS_CLKDIV = 3;		// Quad Read Mode�� ���� 2�� ���� ����. SFLS_CLKDIV = 2�� �ϸ� 3�� ���� ����.		(18.625MHz)
-	SFLS_REG_WB_REQ = 1;
+// 	//SINGLE
+// 	SFLS_CLKDIV = 1;		// Quad Read Mode�� ���� 2�� ���� ����. SFLS_CLKDIV = 2�� �ϸ� 3�� ���� ����.
+// //	SFLS_CLKDIV = 3;		// Quad Read Mode�� ���� 2�� ���� ����. SFLS_CLKDIV = 2�� �ϸ� 3�� ���� ����.		(18.625MHz)
+// 	SFLS_REG_WB_REQ = 1;
 
-	SetIsp(0x388, 0x0);
+// 	SetIsp(0x388, 0x0);
 	
-	#if(0)
-	SFLS_WB_RDCMD = 0x3B;		//DUAL
-	SFLS_WB_WRCMD = 0x02;
-	SFLS_WBCONT = 0x00141000;
-	SFLS_CMD = 0x10010000;
-	while(SFLS_REG_REQ);
-	#endif
+// 	#if(0)
+// 	SFLS_WB_RDCMD = 0x3B;		//DUAL
+// 	SFLS_WB_WRCMD = 0x02;
+// 	SFLS_WBCONT = 0x00141000;
+// 	SFLS_CMD = 0x10010000;
+// 	while(SFLS_REG_REQ);
+// 	#endif
 	
-	gbSFLS_WB_RDCMD_IOM = SFLS_WB_RDCMD_IOM;
-	SFLS_WB_WAIT_EN = 1;
-	SfWrInit;
+// 	gbSFLS_WB_RDCMD_IOM = SFLS_WB_RDCMD_IOM;
+// 	SFLS_WB_WAIT_EN = 1;
+// 	SfWrInit;
 }
 
 
